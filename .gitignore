@@ -1,5 +1,34 @@
-/node_modules
-/vendor
-/.idea
-.idea/
-.env
+# Node.js
+node_modules/          # Thư mục chứa các thư viện cài đặt qua npm
+npm-debug.log           # Log lỗi npm
+yarn-error.log          # Log lỗi yarn
+
+# Các file cấu hình môi trường
+.env                   # File chứa thông tin cấu hình môi trường như database, API keys, ...
+.env.local             # File chứa cấu hình môi trường cá nhân
+.env.development       # File cấu hình môi trường phát triển
+.env.production        # File cấu hình môi trường sản xuất
+
+# Các thư mục build/dist
+dist/                  # Thư mục chứa file build/compiled
+build/                 # Thư mục chứa file build/compiled
+
+# Các file của IDE và Text Editor
+.vscode/               # Cấu hình của Visual Studio Code
+.idea/                 # Cấu hình của JetBrains IDEs (IntelliJ, WebStorm...)
+*.sublime-project      # File dự án Sublime Text
+*.sublime-workspace    # Workspace Sublime Text
+
+# Các file log
+*.log                  # Các file log chung
+
+# Các file chứng chỉ
+*.pem                  # File chứng chỉ bảo mật
+
+# Các file backup
+*.bak                  # Các file sao lưu
+*.swp                  # Các file swap của editor
+
+# Các file không cần thiết khác
+.DS_Store              # Hệ điều hành macOS tạo file .DS_Store để lưu trữ metadata
+Thumbs.db              # Hệ điều hành Windows tạo file Thumbs.db cho thumbnails

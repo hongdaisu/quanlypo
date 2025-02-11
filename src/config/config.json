@@ -2,9 +2,54 @@
   "development": {
     "username": "root",
     "password": null,
-    "database": "database_development",
+    "database": "qlpo",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "logging": false,
+    "query": {
+      "raw": true
+    },
+    "timezone": "+07:00"
+  },
+  "sqlServer": {
+    "server": "10.22.10.22",
+    "database": "QLBV_TT",
+    "username": "sa",
+    "password": "abc1234!",
+    "port": 1433,
+    "pool": {
+      "max": 10,
+      "min": 2,
+      "acquire": 60000,
+      "idle": 30000
+    },
+    "options": {
+      "encrypt": false,
+      "trustServerCertificate": false,
+      "enableArithAbort": false
+    },
+    "requestTimeout": 60000,
+    "connectionTimeout": 60000
+  },
+  "sqlServerHis2": {
+    "server": "10.22.10.12",
+    "database": "eHospital_HMDaNang",
+    "username": "admin",
+    "password": "admin",
+    "port": 1433,
+    "pool": {
+      "max": 10,
+      "min": 2,
+      "acquire": 60000,
+      "idle": 30000
+    },
+    "options": {
+      "encrypt": false,
+      "trustServerCertificate": false,
+      "enableArithAbort": false
+    },
+    "requestTimeout": 60000,
+    "connectionTimeout": 60000
   },
   "test": {
     "username": "root",

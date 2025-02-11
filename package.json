@@ -5,23 +5,53 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --exec babel-node src/server.js"
+    "start": "nodemon --exec babel-node src/server.js",
+    "pm2:start": "pm2 start src/server.js --name QLCV"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/register": "^7.25.7",
+    "activedirectory": "0.7.2",
+    "agent-base": "^7.1.1",
+    "app-root-path": "3.0.0",
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
+    "cookie-parser": "1.4.6",
+    "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "ejs": "^3.1.5",
-    "express": "^4.17.1",
-    "mysql2": "^2.2.5"
+    "exceljs": "^4.4.0",
+    "express": "^4.18.3",
+    "google-auth-library": "9.0.0",
+    "http-proxy-agent": "^7.0.2",
+    "iconv-lite": "^0.4.24",
+    "jsonwebtoken": "8.5.1",
+    "ldapjs": "3.0.7",
+    "lodash": "^4.17.21",
+    "mime-types": "^2.1.35",
+    "mssql": "^6.0.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql": "2.18.1",
+    "mysql2": "^2.2.5",
+    "nodemailer": "^6.6.3",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^4.3.136",
+    "puppeteer": "^22.13.1",
+    "socket.io": "^4.7.5",
+    "tedious": "^9.2.0",
+    "uuid": "8.3.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.10",
+    "@babel/core": "^7.25.8",
     "@babel/node": "^7.12.10",
-    "@babel/preset-env": "^7.12.10",
+    "@babel/preset-env": "^7.25.8",
     "nodemon": "^2.0.7",
+    "puppeteer": "^22.13.1",
     "sequelize": "^6.6.2",
-    "sequelize-cli": "^6.2.0"
+    "sequelize-cli": "^6.2.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
   }
 }
